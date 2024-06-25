@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xertz</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body class="overflow-x-hidden bg-black">
+
+    <!-- Header + hero section -->
+    <section id="hero-section" class="relative bg-cover bg-center h-screen" style="background-image: url('/static/asset/hero_bg1.jpg');">
+        <header class="bg-[#010207] bg-opacity-80">
+            <div class="relative w-10/12 md:w-11/12 max-w-[1400px] mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="" alt="">
+                    <h2 class="text-white text-3xl">Xertz <span class="text-xs opacity-60">Production</span></h2>
+                </div>
+                <nav class="hidden lg:flex items-center space-x-6">
+                    <ul class="flex items-center space-x-6 pr-7">
+                        <li class="text-white py-7 hover:text-white hover:scale-110 hover:font-semibold transition-all duration-500 relative group cursor-pointer">
+                            <a href="#">Home</a>
+                            <div class="absolute w-full h-1 bg-white bottom-3 hidden group-hover:block transition-all duration-200"></div>
+                        </li>
+                        <li class="text-white py-7 hover:text-white hover:scale-110 hover:font-semibold transition-all duration-500 relative group cursor-pointer">
+                            <a href="#">About</a>
+                            <div class="absolute w-full h-1 bg-white bottom-3 hidden group-hover:block transition-all duration-200"></div>
+                        </li>
+                        <li class="text-white py-7 hover:text-white hover:scale-110 hover:font-semibold transition-all duration-500 relative group cursor-pointer">
+                            <a href="#">Works</a>
+                            <div class="absolute w-full h-1 bg-white bottom-3 hidden group-hover:block transition-all duration-200"></div>
+                        </li>
+                        <li class="text-white py-7 hover:text-white hover:scale-110 hover:font-semibold transition-all duration-500 relative group cursor-pointer">
+                            <a href="#">Team</a>
+                            <div class="absolute w-full h-1 bg-white bottom-3 hidden group-hover:block transition-all duration-200"></div>
+                        </li>
+                        <li class="text-white py-7 hover:text-white hover:scale-110 hover:font-semibold transition-all duration-500 relative group cursor-pointer">
+                            <a href="#">Blog</a>
+                            <div class="absolute w-full h-1 bg-white bottom-3 hidden group-hover:block transition-all duration-200"></div>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4">
+                        <div class="text-white border rounded-full transition w-[7rem] h-10 flex items-center justify-center hover:bg-white hover:text-black hover:font-semibold duration-500">
+                            <button>Contact</button>
+                        </div>
+                    </div>
+                </nav>
+                <button class="lg:hidden text-white" id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <div class="lg:hidden hidden" id="mobile-menu">
+                <ul class="flex flex-col items-center space-y-4 py-4 bg-[#010207]">
+                    <li class="text-white"><a href="#">Home</a></li>
+                    <li class="text-white"><a href="#">About</a></li>
+                    <li class="text-white"><a href="#">Works</a></li>
+                    <li class="text-white"><a href="#">Team</a></li>
+                    <li class="text-white"><a href="#">Blog</a></li>
+                    <li class="text-white"><button>Contact</button></li>
+                </ul>
+            </div>
+        </header>
+    
+        <!-- Hero Section -->
+        <div class="w-10/12 md:w-11/12 max-w-[1400px] mx-auto flex flex-col items-center justify-center py-10">
+            <p class="text-white tracking-[4px] mb-7 font-raleway">
+                ARE YOU LOOKING FOR PROFESSIONAL <span class="role"></span>
+            </p>
+            <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+                <!-- Hero Left section -->
+                <div class="mt-[-30px] mb-12 z-10">
+                    <div class="animation-left">
+                        <h1 class="text-white capitalize mt-8 mb-1 font-montserrat font-semibold text-5xl leading-tight sm:text-7xl">Advanced</h1>
+                    </div>
+                    <div class="animation-right">
+                        <h1 class="text-white capitalize mt-2 mb-1 font-montserrat font-semibold text-5xl leading-tight ml-[6rem] sm:text-7xl">Production</h1>
+                    </div>
+                    <div class="animation-left">
+                        <h1 class="text-white capitalize mt-2 mb-4 font-montserrat font-semibold text-5xl leading-tight sm:text-7xl">Digital</h1>
+                    </div>
+                    <div class="animation-right">
+                        <h1 class="text-white capitalize mt-2 mb-1 font-montserrat font-semibold text-5xl leading-tight ml-[6rem] sm:text-7xl">Marketing</h1>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4 ">
+                        <div class="text-white border rounded-full transition w-[7rem] h-10 flex items-center justify-center hover:bg-white hover:text-black hover:font-semibold duration-500 hover:scale-[1.05] shadow-white-hover bg-gradient-to-bl from-black to-transparent">
+                            <button>Learn More</button>
+                        </div>
+                        <a href="#">
+                            <img src="/static/asset/playButton.png" class="button shadow-white-hover bg-center bg-cover bg-no-repeat p-2 border rounded-full hover:scale-[1.05] transition duration-300 h-10" width="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="video-container ml-4 w-full h-full lg:w-[50%] bg-cover z-1 max-w-full animation-right">
+                    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                        <source src="/static/asset/demo_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="relative bg-cover bg-center pt-[2rem] pb-[2rem] " style="background: linear-gradient(45deg, #010207, #010207 50%)">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-center text-2xl text-white font-raleway pt-4 md:text-6xl ">Our Services</h1>
+            <div class=" w-[10rem] mx-auto h-[1px] bg-white "></div>
+            <p class="text-white text-center w-[350px] mx-auto text-[8px] p-3 md:w-[800px] md:mt-1 tracking-[2px] md:text-[1rem]">
+                Comprehensive Digital marketing, Video Production, Product Videography and website Services to Ignite Your Online Success. 
+                Empower Your Business with Powerful Online Services from our Website.
+            </p>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-4 sm:grid-cols-2 md:mt-[5rem] md:mb-[4rem] mx-[3rem] animation-top transition duration-300">
+            <div class="service-box bg-black p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-110">
+                <h3 class="text-xl text-white font-semibold mb-4 text-center ">Digital Marketing</h3>
+                <img src="/static/asset/service_bg_2.jpg" alt="Digital Marketing" class="w-full h-40 object-cover mb-4">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <p class="text-white">View Work Samples</p>
+                        <a href="/digital-marketing-details" class="text-white ml-2">→</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box bg-black p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-110">
+                <h3 class="text-xl text-white font-semibold mb-4 text-center ">Product Videography</h3>
+                <img src="/static/asset/service_bg_3.jpg" alt="Product Videography" class="w-full h-40 object-cover mb-4">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <p class="text-white">View Work Samples</p>
+                        <a href="/product-videography-details" class="text-white ml-2">→</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box bg-black p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-110">
+                <h3 class="text-xl text-white font-semibold mb-4 text-center ">Video Editing</h3>
+                <img src="/static/asset/service_bg_4.jpg" alt="Video Editing" class="w-full h-40 object-cover mb-4">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <p class="text-white">View Work Samples</p>
+                        <a href="/video-editing-details" class="text-white ml-2">→</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box bg-black p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-110">
+                <h3 class="text-xl text-white font-semibold mb-4 text-center ">Website Development</h3>
+                <img src="/static/asset/service_bg_1.jpg" alt="Website Development" class="w-full h-40 object-cover mb-4">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <p class="text-white">View Work Samples</p>
+                        <a href="/website-development-details" class="text-white ml-2">→</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our works samples -->
+    <section class="relative bg-cover bg-center pt-[2rem] pb-[2rem]" style="background: linear-gradient(45deg, #010207, #010207 50%)">
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="/static/asset/product_videography_1.jpg">
+                    <div class="content_work">
+                        <div class="author">Product Videography</div>
+                        <div class="title">Amazon Product</div>
+                        <div class="topic">Listing </div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button class="text-black">SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/asset/product_videography_2.jpg">
+                    <div class="content_work">
+                        <div class="author">Product Videography</div>
+                        <div class="title">Amazon Product</div>
+                        <div class="topic">Listing </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/asset/product_videography_3.jpg">
+                    <div class="content_work">
+                        <div class="author">Product Videography</div>
+                        <div class="title">Amazon Product</div>
+                        <div class="topic">Listing </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/asset/product_videography_4.jpg">
+                    <div class="content_work">
+                        <div class="author">Product Videography</div>
+                        <div class="title">Amazon Product</div>
+                        <div class="topic">Listing </div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="/static/asset/product_videography_1.jpg">
+                    <div class="content_work">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/asset/product_videography_2.jpg">
+                    <div class="content_work">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/asset/product_videography_3.jpg">
+                    <div class="content_work">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/asset/product_videography_4.jpg">
+                    <div class="content_work">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+    
+     </section>
+    
+
+    <!-- about  -->
+    <section class="relative bg-cover bg-center pt-[2rem] pb-[2rem]" style="background: linear-gradient(45deg, #010207, #010207 50%)">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-center text-2xl text-white font-raleway pt-4 md:text-6xl ">About</h1>
+            <div class=" w-[10rem] mx-auto h-[1px] bg-white "></div>
+            <p class="text-white text-center w-[350px] mx-auto text-[8px] p-3 md:w-[800px] md:mt-1 tracking-[2px] md:text-[1rem]">
+                At Xertz Production, we excel in video production, video editing, 
+                digital marketing, and website development to boost your business. 
+                Let us transform your ideas into impactful digital experiences.
+            </p>
+        </div>
+        <div class="py-12">
+            <div class="container mx-auto">
+                <div class="fade-in flex flex-col md:flex-row items-center mb-16 gap-8 px-10" id="vision">
+                    <div class="md:w-[40%] mb-8 md:mb-0 w-full service-box bg-black p-6 rounded-lg shadow-lg ">
+                        <img src="/static/asset/vision.jpg" alt="Vision Image" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-[60%] md:pl-12 w-full">
+                        <h2 class="text-3xl font-bold mb-4 text-white font-raleway">Our Vision</h2>
+                        <p class="text-[0.9rem] md:text-lg leading-relaxed text-white font-raleway">To be the leading digital agency that empowers businesses of all sizes to achieve their full potential through innovative digital marketing, cutting-edge video production, top-tier video editing, and robust website development solutions.</p>
+                    </div>
+                </div>
+                <div class="fade-in flex flex-col md:flex-row-reverse items-center mb-16 px-10 " id="mission">
+                    <div class="md:w-[40%] w-full mb-8 md:mb-0 service-box bg-black p-6 rounded-lg shadow-lg ">
+                        <img src="/static/asset/mission.jpg" alt="Mission Image" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-[60%] md:pr-12 w-full">
+                        <h2 class="text-3xl font-bold mb-4 text-white font-raleway">Our Mission</h2>
+                        <p class="text-[0.9rem] md:text-lg leading-relaxed text-white font-raleway">
+                            <strong>Digital Marketing:</strong> Tailored strategies driving measurable results.<br>
+                            <strong>Video Production:</strong> High-quality videos enhancing brand visibility.<br>
+                            <strong>Video Editing:</strong> Professional editing transforming raw footage.<br>
+                            <strong>Website Development:</strong> User-friendly websites representing your brand.
+                    </div>
+                </div>
+                <div class="fade-in flex flex-col md:flex-row items-center px-10 gap-8" id="values">
+                    <div class="md:w-[40%] mb-8 md:mb-0 w-full service-box bg-black p-6 rounded-lg shadow-lg ">
+                        <img src="/static/asset/values.jpg" alt="Values Image" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 w-full">
+                        <h2 class="text-3xl font-bold mb-4 text-white font-raleway">Our Values</h2>
+                        <p class="text-[0.9rem] md:text-lg leading-relaxed text-white font-raleway">
+                            <strong>Innovation:</strong> Embracing creativity and staying ahead with trends.<br>
+                            <strong>Quality:</strong> Delivering exceptional quality in every project.<br>
+                            <strong>Collaboration:</strong> Teamwork to understand and achieve client goals.<br>
+                            <strong>Integrity:</strong> Conducting business with honesty and transparency.<br>
+                            <strong>Customer Focus:</strong> Tailoring services to meet and exceed client needs.<br>
+                            <strong>Continuous Improvement:</strong> Constantly refining skills and processes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- review section -->
+        <div class="mb-10">
+            <h1 class="text-center text-2xl text-white font-raleway pt-4 md:text-6xl ">Our Customer Review</h1>
+            <div class=" w-[10rem] mx-auto h-[1px] bg-gray-500 "></div>
+            <main class="mx-auto mt-10 ">
+                <div class="slider">
+                    <div class="slide-row" id="slide-row">
+                      <div class="slide-col">
+                            <div class="content">
+                                <p>Zen Doan is a business analyst, entrepreneur and media proprietor, and investor. She also known as the best selling book author.</p>
+                                <h2>Zen</h2>
+                                <p>Author</p>
+                            </div>
+                            <div class="hero">
+                                <img src="https://user-images.githubusercontent.com/13468728/234031693-6bbaba7d-632c-4d7d-965f-75a76a549ce2.jpg" alt="avatar">
+                            </div>
+                        </div>
+            
+                        <div class="slide-col">
+                            <div class="content">
+                                <p>Jonathan Koletic is an American internet entrepreneur and media proprietor, and investor. He is the founder of the multi-national technology company Treymont.</p>
+                                <h2>Jonathan</h2>
+                                <p>Treymont Inc.</p>
+                            </div>
+                            <div class="hero">
+                                <img src="https://user-images.githubusercontent.com/13468728/234031617-2dfb19ea-01d0-4370-b63b-bb6bdfb4f78e.jpg" alt="avatar">
+                            </div>
+                        </div>
+            
+                        <div class="slide-col">
+                            <div class="content">
+                                <p>Charlie Green is an European entrepreneur and media consultant, and investor. He is the founder of the Hallmark Inc.</p>
+                                <h2>Charlie</h2>
+                                <p>Hallmark Inc.</p>
+                            </div>
+                            <div class="hero">
+                                <img src="https://user-images.githubusercontent.com/13468728/234031646-10533999-39e5-4c7b-ab54-d0299b13ce74.jpg" alt="avatar">
+                            </div>
+                        </div>
+                      
+                       <div class="slide-col">
+                            <div class="content">
+                                <p>Sarah Dam is an American internet entrepreneur and media proprietor, and investor. She is the founder of the multi-national technology company Zara.</p>
+                                <h2>Sarah</h2>
+                                <p>Zara Inc.</p>
+                            </div>
+                            <div class="hero">
+                                <img src="https://github.com/ecemgo/ecemgo/assets/13468728/55116c98-5f9a-4b0a-9fdb-4911b52d5ef3" alt="avatar">
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+                
+                <div class="indicator">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </main>
+        </div>
+
+        <!-- scrolling counter animation -->
+        <div class="counter-container text-center" >
+            <div class="container mx-auto px-10">
+                <div class="flex flex-row items-center md:flex-row justify-between">
+                    <div class="mb-0 md:mb-8 flex flex-col items-center justify-between">
+                        <img src="/static/asset/experience_icon.png" width="100px" class="w-[50px] md:w-[100px]">
+                        <div class="counter box-shadow-hover " id="experienceCounter"><span>+</span>0</div>
+                        <p class="text-white text-[1rem] md:text-lg">Years of Experience</p>
+                    </div>
+                    <div class="mb-0 md:mb-8 flex flex-col items-center justify-between">
+                        <img src="/static/asset/project_icon.png" width="100px" class="w-[50px] md:w-[100px]">
+                        <div class="counter box-shadow-hover " id="projectsCounter"><span>+</span>0</div>
+                        <p class="text-white text-[1rem] md:text-lg">Projects Completed</p>
+                    </div>
+                    <div class="mb-0 md:mb-8 flex flex-col items-center justify-between gap-2 md:gap-0">
+                        <img src="/static/asset/collab_icons.png" width="100px" class="w-[50px] md:w-[100px]">
+                        <div class="counter box-shadow-hover" id="collaborationsCounter"><span>+</span>0</div>
+                        <p class="text-white text-[1rem] md:text-lg">Collaborations</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- Team Sectio -->
+    <section id="team_body flex flex-col">
+        <h1 class="text-center text-2xl text-white font-raleway pt-4 md:text-6xl ">Our Team</h1>
+            <div class=" w-[10rem] mx-auto h-[1px] bg-gray-500 "></div>
+        <div class="container_team ">
+            <div>
+                <div class="card_team" style="background-image:  url(/static/asset/sample_person.png); background-size: cover;">
+                    <div class="content_team" >
+                      <h2 class="text-bottom-to-top">Founder</h2>
+                      <h3>Yash Dhiman</h3>
+                      <p>
+                        Wake up to reality! Nothing ever goes as planned in this accursed
+                        world. The longer you live, the more you realize that the only
+                        things that truly exist in this reality are merely pain. suffering
+                        and futility. Listen, everywhere you look in this world, wherever
+                        there is light, there will always be shadows to be found as well. As
+                        long as there is a concept of victors, the vanquished will also
+                        exist.
+                      </p>
+                      <div class="flex space-x-4">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank" class="">
+                          <img src="/static/asset/insta_icon.svg" >
+                        </a>
+                        <!-- Threads -->
+                        <a href="https://www.threads.net" target="_blank" >
+                            <img src="/static/asset/whatsapp.svg" >
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank" >
+                            <img src="/static/asset/icons8-twitter.svg" >
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:someone@example.com" >
+                            <img src="/static/asset/gmail_icon.svg" >
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <h1 class="text-white text-center">Yash Dhiman</h1>
+                  <h2 class="text-white text-center text-opacity-70">Founder, Video Editor</h2>
+            </div>
+          
+            <div>
+              <div class="card_team" style="background-image:  url(/static/asset/sample_person.png); background-size: cover;">
+                  <div class="content_team">
+                    <h2 class="text-bottom-to-top">Web Dev</h2>
+                    <h3>Rohit Sain</h3>
+                    <p>
+                      Wake up to reality! Nothing ever goes as planned in this accursed
+                      world. The longer you live, the more you realize that the only
+                      things that truly exist in this reality are merely pain. suffering
+                      and futility. Listen, everywhere you look in this world, wherever
+                      there is light, there will always be shadows to be found as well. As
+                      long as there is a concept of victors, the vanquished will also
+                      exist.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank" class="">
+                          <img src="/static/asset/insta_icon.svg" >
+                        </a>
+                        <!-- Threads -->
+                        <a href="https://www.threads.net" target="_blank" >
+                            <img src="/static/asset/whatsapp.svg" >
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank" >
+                            <img src="/static/asset/icons8-twitter.svg" >
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:someone@example.com" >
+                            <img src="/static/asset/gmail_icon.svg" >
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <h1 class="text-white text-center">Rohit Sain</h1>
+                <h2 class="text-white text-center text-opacity-70">Web developer</h2>
+            </div>
+  
+            <div>
+              <div class="card_team" style="background-image:  url(/static/asset/sample_person.png); background-size: cover;">
+                  <div class="content_team">
+                    <h2 class="text-bottom-to-top">web dsg</h2>
+                    <h3>Satwik Shourya</h3>
+                    <p>
+                      Wake up to reality! Nothing ever goes as planned in this accursed
+                      world. The longer you live, the more you realize that the only
+                      things that truly exist in this reality are merely pain. suffering
+                      and futility. Listen, everywhere you look in this world, wherever
+                      there is light, there will always be shadows to be found as well. As
+                      long as there is a concept of victors, the vanquished will also
+                      exist.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank" class="">
+                          <img src="/static/asset/insta_icon.svg" >
+                        </a>
+                        <!-- Threads -->
+                        <a href="https://www.threads.net" target="_blank" >
+                            <img src="/static/asset/whatsapp.svg" >
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank" >
+                            <img src="/static/asset/icons8-twitter.svg" >
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:someone@example.com" >
+                            <img src="/static/asset/gmail_icon.svg" >
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <h1 class="text-white text-center">Satwik Shourya</h1>
+                <h2 class="text-white text-center text-opacity-70">Web designer</h2>
+            </div>
+  
+            <div>
+              <div class="card_team" style="background-image:  url(/static/asset/sample_person.png); background-size: cover;">
+                  <div class="content_team" >
+                    <h2 class="text-bottom-to-top">Founder</h2>
+                    <h3>Yash Dhiman</h3>
+                    <p>
+                      Wake up to reality! Nothing ever goes as planned in this accursed
+                      world. The longer you live, the more you realize that the only
+                      things that truly exist in this reality are merely pain. suffering
+                      and futility. Listen, everywhere you look in this world, wherever
+                      there is light, there will always be shadows to be found as well. As
+                      long as there is a concept of victors, the vanquished will also
+                      exist.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank" class="">
+                          <img src="/static/asset/insta_icon.svg" >
+                        </a>
+                        <!-- Threads -->
+                        <a href="https://www.threads.net" target="_blank" >
+                            <img src="/static/asset/whatsapp.svg" >
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank" >
+                            <img src="/static/asset/icons8-twitter.svg" >
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:someone@example.com" >
+                            <img src="/static/asset/gmail_icon.svg" >
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <h1 class="text-white text-center">Mohit</h1>
+                <h2 class="text-white text-center text-opacity-70">Video Content editor</h2>
+            </div>
+            
+            <div>
+              <div class="card_team" style="background-image:  url(/static/asset/sample_person.png); background-size: cover;">
+                  <div class="content_team">
+                    <h2 class="text-bottom-to-top">Web Dev</h2>
+                    <h3>Rohit Sain</h3>
+                    <p>
+                      Wake up to reality! Nothing ever goes as planned in this accursed
+                      world. The longer you live, the more you realize that the only
+                      things that truly exist in this reality are merely pain. suffering
+                      and futility. Listen, everywhere you look in this world, wherever
+                      there is light, there will always be shadows to be found as well. As
+                      long as there is a concept of victors, the vanquished will also
+                      exist.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank" class="">
+                          <img src="/static/asset/insta_icon.svg" >
+                        </a>
+                        <!-- Threads -->
+                        <a href="https://www.threads.net" target="_blank" >
+                            <img src="/static/asset/whatsapp.svg" >
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank" >
+                            <img src="/static/asset/icons8-twitter.svg" >
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:someone@example.com" >
+                            <img src="/static/asset/gmail_icon.svg" >
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <h1 class="text-white text-center">Manish</h1>
+                <h2 class="text-white text-center text-opacity-70">junier Editor</h2>
+            </div>
+            
+            <div>
+              <div class="card_team" style="background-image:  url(/static/asset/sample_person.png); background-size: cover;">
+                  <div class="content_team">
+                    <h2 class="text-bottom-to-top">web dsg</h2>
+                    <h3>Satwik Shourya</h3>
+                    <p>
+                      Wake up to reality! Nothing ever goes as planned in this accursed
+                      world. The longer you live, the more you realize that the only
+                      things that truly exist in this reality are merely pain. suffering
+                      and futility. Listen, everywhere you look in this world, wherever
+                      there is light, there will always be shadows to be found as well. As
+                      long as there is a concept of victors, the vanquished will also
+                      exist.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank" class="">
+                          <img src="/static/asset/insta_icon.svg" >
+                        </a>
+                        <!-- Threads -->
+                        <a href="https://www.threads.net" target="_blank" >
+                            <img src="/static/asset/whatsapp.svg" >
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank" >
+                            <img src="/static/asset/icons8-twitter.svg" >
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:someone@example.com" >
+                            <img src="/static/asset/gmail_icon.svg" >
+                        </a>
+                      </div>
+                  </div>
+                </div>
+                <h1 class="text-white text-center ">Mithoon</h1>
+                <h2 class="text-white text-center text-opacity-70">Business Analyst</h2>
+            </div>
+        </div>
+      </section >
+
+    <!-- Newsletter section -->
+    <section class="relative bg-cover bg-center" style="background-image: url('/static/asset/xertz__newsletter.png');">
+        <div class="w-full relative">
+            <div class="relative w-full mx-auto h-[500px] md:h-[700px] overflow-hidden">
+                <div class="relative w-full h-full">
+                    <!-- Black film overlay -->
+                    <div class="absolute inset-0 bg-black opacity-30 w-full"></div>
+                    <!-- image animation -->
+                    <div class="image-animation-left-top absolute h-[12%] w-[12%] md:h-[250px] md:w-[250px] transform rotate-[-30deg] top-[1rem] left-[2rem] md:left-[10%]">
+                        <img src="/static/asset/product_videography_3.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="image-animation-right absolute h-[18%] w-[18%] md:h-[350px] md:w-[350px] transform rotate-[15deg] bottom-[1rem] right-0">
+                        <img src="/static/asset/product_videography_4.jpg" alt="">
+                    </div>
+                    <div class="image-animation-left-right absolute h-[15%] w-[15%] md:h-[350px] md:w-[350px] transform rotate-[5deg] bottom-[-3rem] left-[2rem] md:left-[10%]">
+                        <img src="/static/asset/product_videography_6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-white z-30 gap-3 px-4 md:px-0">
+                    <p class="font-sans text-cyan-400 text-xs md:text-sm opacity-90 tracking-widest">VIDEOGRAPHY + PRODUCTION + MARKETING</p>
+                    <h1 class="font-sans text-3xl md:text-5xl font-semibold text-center md:text-left">LET'S DISCUSS</h1>
+                    <h1 class="italic text-3xl md:text-5xl text-slate-200 font-thin text-center md:text-left">YOUR IDEAS</h1>
+                    <div class="flex flex-col items-center md:items-start text-gray-400 text-center md:text-left p-6 md:p-0">
+                        <p>Stay in the loop with our latest videography and digital marketing insights.</p>
+                        <p>Subscribe for exclusive updates and behind-the-scenes content.</p>
+                    </div>
+                    <button id="getInTouchBtn" class="rounded-2xl border border-white p-3 hover:bg-white group transition duration-200">
+                        <a href="#" class="text-white text-lg group-hover:text-black">GET IN TOUCH ///</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Popup dialog -->
+        <div id="popupDialog" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-black bg-opacity-70 rounded-lg p-6 w-full max-w-md">
+                <button id="closePopup" class="text-slate-200 float-right">&times;</button>
+                <h2 class="text-2xl mb-4 text-white">Get in Touch</h2>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-white text-sm font-bold mb-2" for="name">Name</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-white text-sm font-bold mb-2" for="surname">Surname</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="surname" type="text" placeholder="Your Surname">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-white text-sm font-bold mb-2" for="email">Email</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email Address">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-white text-sm font-bold mb-2" for="mobile">Mobile Number</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="mobile" type="tel" placeholder="Mobile Number">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-white text-sm font-bold mb-2" for="service">Service Need</label>
+                        <select class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="service">
+                            <option>Videography</option>
+                            <option>Production</option>
+                            <option>Marketing</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-white text-sm font-bold mb-2" for="responseTime">Response Time in Days</label>
+                        <select class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="responseTime">
+                            <option>1 Day</option>
+                            <option>2 Days</option>
+                            <option>3 Days</option>
+                            <option>4 Days</option>
+                            <option>5 Days</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+        
+    <!-- footer -->
+    <footer class="relative py-8 bg-black">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center max-w-7xl px-4">
+            <!-- Logo and Production text -->
+            <div class="text-white text-center md:text-left mb-6 md:mb-0">
+                <h1 class="text-4xl font-bold">XERTZ</h1>
+                <p class="text-lg">PRODUCTION</p>
+            </div>
+            <!-- Navigation Links -->
+            <div class="flex flex-row space-y-6 space-x-10 md:space-y-0 ">
+                <!-- Main Column -->
+                <div>
+                    <h2 class="text-xl font-semibold mb-2 text-white md:mt-0 mt-6">MAIN</h2>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-white transition duration-300 ">Home</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">About</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">Portfolio</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Pages Column -->
+                <div>
+                    <h2 class="text-xl font-semibold mb-2 text-white">PAGES</h2>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-white transition duration-300 ">Contact</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">Instructions</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Utilities Column -->
+                <div>
+                    <h2 class="text-xl font-semibold mb-2 text-white">UTILITIES</h2>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-white transition duration-300 ">Style Guide</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">Licensing</a></li>
+                        <li><a href="#" class="text-white transition duration-300 ">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="border-t border-white mt-8 pt-4">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center max-w-7xl px-4">
+                <p class="text-white text-sm">© 2024 Xertz Production. All Rights Reserved.</p>
+                <p class="text-white text-sm">Built by <a href="34278676428" class="text-cyan-400 underline font-Birthstone-Bounce ">Rohit Sain</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- script -->
+    <script src="/static/src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</body>
+</html>
